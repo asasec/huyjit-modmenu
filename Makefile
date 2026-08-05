@@ -12,7 +12,7 @@ TWEAK_NAME = 34306jit
 $(TWEAK_NAME)_FRAMEWORKS = UIKit Foundation Security QuartzCore CoreGraphics CoreText AVFoundation Accelerate GLKit SystemConfiguration GameController
 
 $(TWEAK_NAME)_CCFLAGS = -std=c++17 -frtti -fexceptions -DNDEBUG -Wno-nontrivial-memcall -Wno-deprecated-declarations
-$(TWEAK_NAME)_CFLAGS = -fobjc-arc -Wno-deprecated-declarations -Wno-unused-variable -Wno-unused-value
+$(TWEAK_NAME)_CFLAGS = -fobjc-arc -Wno-deprecated-declarations -Wno-unused-variable -Wno-unused-value -Wno-module-import-in-extern-c
 
 # Dobby hook kütüphane yolu
 $(TWEAK_NAME)_OBJ_FILES = 5Toubun/libdobby.a
